@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**/
+
+/* Group utilities
+or
+custom created
+*/
+@layer components{
+
+    .btn{
+        @apply  px-6 py-3 rounded-xl flex flex-row justify-center items-center space-x-2.5 font-serif hover:bg-red ;
+    }
+
+    .btn-gradient{
+        @apply bg-gradient-to-t from-red to-orange px-6 py-3 hover:bg-red
+    }
+
+    .border-gradient{
+        @apply bg-gradient-to-r from-orange to-red p-[1px] rounded-lg
+    }
+
+    .section-title{
+        @apply font-semibold text-black text-4xl text-center;
+    }
+    .color-text{
+        @apply bg-title-gradient bg-clip-text text-transparent;
+    }
+    .subtitle-box{
+        @apply border-2 border-subtitle-color border-opacity-30 rounded-full;
+    }
+    .subtitle-text{
+        @apply px-5 py-2.5 rounded-full bg-subtitle-color bg-opacity-10 text-red text-center;
+    }
+
+}
+

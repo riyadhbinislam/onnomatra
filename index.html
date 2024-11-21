@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat+Brush&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
+    <link href="output/output.css" rel="stylesheet" />
+    <!-- Link to the output CSS -->
+    <title>Onnomatra</title>
+  </head>
+<body class="h-screen font-serif transition-all">
+
+    <!-- NAVIGATION AREA -->
+
+    <section class="container">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="flex flex-wrap items-center justify-between p-4">
+
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="Assets/images/Logo Black.png" class="h-8" alt="Onnomatra Logo" />
+                </a>
+
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button" class="hidden md:inline-flex btn btn-gradient text-white hover:opacity-85 ">
+                        <span>Log in</span>
+                        <img src="Assets/images/login.svg" alt="" >
+                    </button>
+
+                    <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-black font-normal text-xl rounded hover:bg-gray md:hover:bg-transparent md:hover:text-gray md:dark:hover:text-white dark:text-white dark:hover:bg-gray dark:hover:text-white md:dark:hover:bg-transparent">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-black font-normal text-xl rounded hover:bg-gray md:hover:bg-transparent md:hover:text-gray md:dark:hover:text-white dark:text-white dark:hover:bg-gray dark:hover:text-white md:dark:hover:bg-transparent">Templates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-black font-normal text-xl rounded hover:bg-gray md:hover:bg-transparent md:hover:text-gray md:dark:hover:text-white dark:text-white dark:hover:bg-gray dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-black font-normal text-xl rounded hover:bg-gray md:hover:bg-transparent md:hover:text-gray md:dark:hover:text-white dark:text-white dark:hover:bg-gray dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+    <!-- HERO AREA -->
+
+    <section class="pt-28 bg-hero bg-no-repeat bg-bottom bg-auto-500 md:bg-cover md:bg-center  relative z-10" >
+        <div class="container ">
+            <div class="space-y-3">
+                <h1 class="section-title md:text-[40px] lg:text-[64px] leading-normal">Ready Web Builder <br> For Your<span class="color-text"> E-Commerce <span class="italic font-normal font-Libre">Success!</span></span></h1>
+                <p class="text-center text-gray text-xl">We empower businesses and brands to create outstanding websites that turn visitors into paying customers.</p>
+            </div>
+            <div class="space-x-6 flex flex-wrap flex-row justify-center items-center mt-12">
+                <button type="button" class="btn btn-gradient text-white hover:opacity-85 duration-700">
+                    Get Started
+                    <!-- <img src="Assets/images/login.svg" alt="" > -->
+                </button>
+                <button type="button" class="btn border border-subtitle-color bg-white  hover:bg-red hover:text-white duration-700">
+                    <img src="/Assets/images/View Button.png" alt="" class="hover:fill-white mr-2.5" >
+                    View Demo
+                </button>
+            </div>
+            <div class="mt-24 flex justify-center items-center bg-whiteoverlay" >
+                <img class="hidden lg:inline-flex"  src="Assets/images/Ready Web Builder For Your ECommerce Success.png" alt="Ready Web Builder For Your ECommerce Success">
+                <img class="inline-flex lg:hidden"  src="Assets/images/HeroBackground-alt.png" alt="Ready Web Builder For Your ECommerce Success">
+            </div>
+            <div class="h-56 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO AREA -->
+
+    <section>
+        <div class="container pt-32 pb-32 grid grid-cols-1 gap-12 lg:grid-cols-2 ">
+
+            <a href="#"><img src="/Assets/images/portfolio Image.png" alt=""></a>
+
+            <div class="space-y-6 -order-1 lg:order-1">
+                <div class="space-y-3 text-center lg:text-left">
+                    <div class="subtitle-box w-fit m-auto lg:m-0"><p class="subtitle-text">Click & Build Your Business</p></div>
+                    <h2 class="section-title text-center lg:text-left">Publish Your <span class="color-text">Website In Seconds.</span></h2>
+                    <p class="text-gray">Turn your ideas into a real website quickly. Select from thousands of free and premium website templates and customize them as you see fit.</p>
+                </div>
+                <div class="flex flex-wrap flex-row gap-3">
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> E-commerce </button>
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> Organic Product </button>
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> Clothing Brand </button>
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> Footwear Brand </button>
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> Jewelry Product </button>
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> Gadget </button>
+                    <button type="button" class="btn border-2 border-stroke-color bg-white hover:bg-subtitle-color duration-700"> Jewelry </button>
+                </div>
+                <button type="button" class="m-auto lg:m-0 btn btn-gradient text-white hover:opacity-85 duration-700">Browse Templates</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SHOWCASE AREA -->
+
+    <section>
+        <div class="container pb-32 space-y-12">
+            <div class="space-y-3 mx-auto">
+                <div class="subtitle-box w-fit mx-auto"><p class="subtitle-text">Make Your Business Easy & Secure</p></div>
+
+                <h2 class="section-title">Pixel-Perfect Websites <br><span class="color-text">Grow Your Business & Enhance Usability</span></h2>
+
+                <p class="text-gray lg:w-1/2 mx-auto text-center">Our websites empower your business to thrive by attracting customers, enhancing usability, and creating a memorable online experience that keeps users coming back.</p>
+            </div>
+
+            <div class="flex flex-wrap flex-row gap-4 justify-center">
+                <a class="glightbox" href="/Assets/images/Showcase-1.png" data-title="SHOWCASE">
+                    <img class="cursor-pointer" src="/Assets/images/Showcase-1.png" alt="">
+                </a>
+                <a class="glightbox" href="/Assets/images/Showcase-2.png" data-title="SHOWCASE">
+                    <img class="cursor-pointer" src="/Assets/images/Showcase-2.png" alt="">
+                </a>
+                <a class="glightbox" href="/Assets/images/Showcase-3.png" data-title="SHOWCASE">
+                    <img class="cursor-pointer" src="/Assets/images/Showcase-3.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS AREA -->
+
+    <section>
+        <div class="container pb-32 space-y-12">
+            <div class="space-y-3 mx-auto">
+                <div class="subtitle-box w-fit mx-auto"><p class="subtitle-text">All of Our Tools You Get</p></div>
+
+                <h2 class="section-title">We Provide Powerful System <br><span class="color-text">Customer-Attracting Website Solution</span></h2>
+
+                <p class="text-gray lg:w-1/2 mx-auto text-center">Complete tools to attract customers and grow your business online effortlessly.</p>
+            </div>
+
+            <div class="mx-auto">
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5 ">
+
+                    <div class=" bg-card-color p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Pencil.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Powerful Editor</h3>
+                            <p class="text-gray">
+                                Checkout our powerful drag-and-drop editor, designed to make page building fast and easy for anyone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color-alt p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Order Management.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Order Management</h3>
+                            <p class="text-gray">
+                                Seamlessly manage all your orders, from Facebook inboxes to manual entries
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/High Speed Hosting.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">High Speed Hosting</h3>
+                            <p class="text-gray">
+                                Experience lightning-fast page delivery with our powerful CDN hosting, ensuring.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color-alt p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Instant Landing Page.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Instant Landing Page</h3>
+                            <p class="text-gray">
+                                Jumpstart your online presence with our ready-made, customizable landing page templates tailored.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color-alt p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Custom Domain Support.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Custom Domain Support</h3>
+                            <p class="text-gray">
+                                Personalize your brand’s identity by setting up your unique domain quickly and easily.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Automated Invoice Generation.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Automated Invoice Generation</h3>
+                            <p class="text-gray">
+                                Streamline your business with our auto-invoice system, ensuring accurate invoicing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color-alt p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Courier Management.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Courier Management</h3>
+                            <p class="text-gray">
+                                Simplify your shipping process with our one-click order entry system, making courier updates.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/Stock Management.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">Stock Management</h3>
+                            <p class="text-gray">
+                                Checkout our powerful drag-and-drop editor, designed to make page building fast and easy for anyone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-card-color p-6 rounded-2xl space-y-6">
+                        <div>
+                            <img src="Assets/images/CardIcon/SSL Security.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-lg font-serif">SSL Security</h3>
+                            <p class="text-gray">
+                                Protect your website and user data with automatic SSL encryption, ensuring security.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare -->
+
+    <section>
+        <div class="container pb-32 lg:py-[300px] space-y-12 lg:bg-hero-alt bg-no-repeat bg-contain bg-leftCenter ">
+
+            <div class="space-y-3 mx-auto">
+                <div class="subtitle-box w-fit mx-auto"><p class="subtitle-text">Compare With Others</p></div>
+
+                <h2 class="section-title">Why We Are Better <br><span class="color-text">Than Others Typical Solution</span></h2>
+
+                <p class="text-gray lg:w-1/2 mx-auto text-center">Complete tools to attract customers and grow your business online effortlessly.</p>
+            </div>
+
+            <div class="flex flex-row justify-center gap-5">
+                <div class="">
+                    <div class="flex flex-row justify-end gap-2.5 pb-3 border-b border-card-color-sky">
+                        <img src="/Assets/images/WordPress.png" alt="WordPress">
+                        <img src="/Assets/images/Cart Flows.png" alt="CartFlow">
+                        <img src="/Assets/images/Elementor.png" alt="Elementor">
+                    </div>
+                    <div class="space-y-3 mt-3 font-Caveat lg:hidden">
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-3 w-3 flex"  src="/Assets/images/whyus/sm-Requires multiple tools.png" alt="">
+                            <p class="font-Caveat font-normal text-lg">Requires multiple tools</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Generic and less relevant.png" alt="">
+                            <p class="font-Caveat text-lg">Generic and less relevant</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus//sm-Limited support.png" alt="">
+                            <p class="font-Caveat text-lg">Limited support</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Complex and technical.png" alt="">
+                            <p class="font-Caveat text-lg">Complex and technical</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Rigid and restrictive.png" alt="">
+                            <p class="font-Caveat text-lg">Rigid and restrictive</p>
+                        </div>
+                    </div>
+                </div>
+    <div class="border-r border-card-color-sky lg:hidden"></div>
+                <div>
+                    <div class="border-b border-card-color-sky pb-3">
+                        <img class="h-5" src="/Assets/images/Logo Black.png" alt="">
+                    </div>
+                    <div class="space-y-3 mt-3 lg:hidden" >
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-All-in-One Platform.png" alt="">
+                            <p class="font-Caveat text-lg">All-in-One Platform</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Localized Solutions.png" alt="">
+                            <p class="font-Caveat text-lg">Localized Solutions</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Dedicated Support.png" alt="">
+                            <p class="font-Caveat text-lg">Dedicated Support</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Easy to Use.png" alt="">
+                            <p class="font-Caveat text-lg">Easy to Use</p>
+                        </div>
+                        <div class="flex flex-row space-x-2 items-center">
+                            <img class="h-4 w-4 flex"  src="/Assets/images/whyus/sm-Flexible & Scalable.png" alt="">
+                            <p class="font-Caveat text-lg">Flexible & Scalable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Pricing AREA -->
+
+    <section>
+        <div class="container pb-32 space-y-12">
+            <div class="space-y-3 mx-auto">
+                <div class="subtitle-box w-fit mx-auto"><p class="subtitle-text">All of Our Tools You Get</p></div>
+                <h2 class="section-title">We Provide Powerful System <br><span class="color-text">Customer-Attracting Website Solution</span></h2>
+                <p class="text-gray md:w-1/2 mx-auto text-center">Complete tools to attract customers and grow your business online effortlessly.</p>
+            </div>
+
+
+            <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2  gap-5 ">
+                <div class="border border-1 rounded-2xl border-stroke-color p-5 bg-white space-y-3 shadow-2xl">
+                    <div class="px-3 space-y-1">
+                        <h3 class="font-bold text-xl text-black">Basic</h3>
+                        <p class="text-gray">Great To Start</p>
+                    </div>
+                    <div class="px-3 py-2.5 space-y-5 border-t border-stroke-color border-b rounded-t-lg rounderd-b-lg">
+                        <h3 class="font-semibold text-3xl"><span class="color-text">TK</span> 900<sub class="text-sm text-gray font-normal">/month</sub></h3>
+                        <button type="button" class="w-full btn btn-gradient text-white hover:opacity-85 duration-700">Get Started</button>
+                    </div>
+
+                    <div class=" pt-5">
+                        <ul class="custom-checklist space-y-5 text-gray">
+                            <li>1 Online Store</li>
+                            <li>Custom Domain</li>
+                            <li>Drag & Drop, No Code Editor</li>
+                            <li>Auto Invoice Making</li>
+                            <li>Super Fast CDN Hosting</li>
+                            <li>Auto Courier Entry</li>
+                            <li>Unlimited Products</li>
+                            <li>Inventory Management</li>
+                            <li>Multi Page Themes</li>
+                            <li>Bulk SMS Marketing Features</li>
+                            <li>Landing Page Templates</li>
+                            <li>Marketing Tools</li>
+                            <li>Business Reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border border-1 rounded-2xl border-stroke-color p-5 bg-white space-y-3 shadow-2xl">
+                    <div class="px-3 space-y-1">
+                        <h3 class="font-bold text-xl text-black">Standard</h3>
+                        <p class="text-gray">Better for mid level business</p>
+                    </div>
+                    <div class="px-3 py-2.5 space-y-5 border-t border-stroke-color border-b rounded-t-lg rounderd-b-lg">
+                        <h3 class="font-semibold text-3xl"><span class="color-text">TK</span> 1500<sub class="text-sm text-gray font-normal">/month</sub></h3>
+                        <button type="button" class="w-full btn btn-gradient text-white hover:opacity-85 duration-700">Get Started</button>
+                    </div>
+
+                    <div class=" pt-5">
+                        <ul class="custom-checklist space-y-5 text-gray">
+                            <li>1 Online Store</li>
+                            <li>Custom Domain</li>
+                            <li>Drag & Drop, No Code Editor</li>
+                            <li>Auto Invoice Making</li>
+                            <li>Super Fast CDN Hosting</li>
+                            <li>Auto Courier Entry</li>
+                            <li>Unlimited Products</li>
+                            <li>Inventory Management</li>
+                            <li>Multi Page Themes</li>
+                            <li>Bulk SMS Marketing Features</li>
+                            <li>Landing Page Templates</li>
+                            <li>Marketing Tools</li>
+                            <li>Business Reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border border-1 rounded-2xl border-stroke-color p-5 bg-white space-y-3 shadow-2xl">
+                    <div class="px-3 space-y-1">
+                        <div class="flex flex-row justify-between">
+                            <h3 class="font-bold text-xl text-black">Premium</h3>
+                            <div class="border border-red rounded-lg py-1 px-2.5 flex flex-row justify-between items-center">
+                                <p class="color-text text-xs">Recommended</p>
+                                <img class="h-3" src="/Assets/images/sparkles.png" alt="">
+                            </div>
+                        </div>
+                        <p class="text-gray">Best for every business</p>
+                    </div>
+                    <div class="px-3 py-2.5 space-y-5 border-t border-stroke-color border-b rounded-t-lg rounderd-b-lg">
+                        <h3 class="font-semibold text-3xl"><span class="color-text">TK</span> 2500<sub class="text-sm text-gray font-normal">/month</sub></h3>
+                        <button type="button" class="w-full btn btn-gradient text-white hover:opacity-85 duration-700">Get Started</button>
+                    </div>
+
+                    <div class=" pt-5">
+                        <ul class="custom-checklist space-y-5 text-gray">
+                            <li>1 Online Store</li>
+                            <li>Custom Domain</li>
+                            <li>Drag & Drop, No Code Editor</li>
+                            <li>Auto Invoice Making</li>
+                            <li>Super Fast CDN Hosting</li>
+                            <li>Auto Courier Entry</li>
+                            <li>Unlimited Products</li>
+                            <li>Inventory Management</li>
+                            <li>Multi Page Themes</li>
+                            <li>Bulk SMS Marketing Features</li>
+                            <li>Landing Page Templates</li>
+                            <li>Marketing Tools</li>
+                            <li>Business Reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border border-1 rounded-2xl border-stroke-color p-5 bg-white space-y-3 shadow-2xl">
+                    <div class="px-3 space-y-1">
+                        <div class="flex flex-row justify-between">
+                            <h3 class="font-bold text-xl text-black">Business</h3>
+                            <div class="border border-red rounded-lg py-1 px-2.5 flex flex-row justify-between items-center">
+                                <p class="color-text text-xs">Recommended</p>
+                                <img class="h-3" src="/Assets/images/sparkles.png" alt="">
+                            </div>
+                        </div>
+                        <p class="text-gray">All in one none stop solution</p>
+                    </div>
+                    <div class="px-3 py-2.5 space-y-5 border-t border-stroke-color border-b rounded-t-lg rounderd-b-lg">
+                        <h3 class="font-semibold text-3xl"><span class="color-text">TK</span> 3000<sub class="text-sm text-gray font-normal">/month</sub></h3>
+                        <button type="button" class="w-full btn btn-gradient text-white hover:opacity-85 duration-700">Get Started</button>
+                    </div>
+
+                    <div class=" pt-5">
+                        <ul class="custom-checklist space-y-5 text-gray">
+                            <li>1 Online Store</li>
+                            <li>Custom Domain</li>
+                            <li>Drag & Drop, No Code Editor</li>
+                            <li>Auto Invoice Making</li>
+                            <li>Super Fast CDN Hosting</li>
+                            <li>Auto Courier Entry</li>
+                            <li>Unlimited Products</li>
+                            <li>Inventory Management</li>
+                            <li>Multi Page Themes</li>
+                            <li>Bulk SMS Marketing Features</li>
+                            <li>Landing Page Templates</li>
+                            <li>Marketing Tools</li>
+                            <li>Business Reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ AREA -->
+
+    <section class="relative py-12 overflow-hidden">
+        <div class="relative container pb-32 space-y-12">
+
+            <div class="space-y-3 mx-auto mb-12">
+                <h2 class="section-title">Frequently Asked <span class="color-text">Questions</span></h2>
+                <p class="text-gray md:w-1/2 mx-auto text-center">Here are answers to some common questions to help clarify any details you might need.</p>
+            </div>
+
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                    <div class="px-8 py-10 mb-6 rounded-3xl shadow-lg bg-card-color-sky">
+                        <div class="flex cursor-pointer group w-full items-start justify-between text-left" x-data="{ accordion: false }" x-on:click="accordion = !accordion">
+                            <div class=" pr-5">
+                                <div class="flex justify-between gap-2.5 items-center">
+                                    <div class="min-w-20 h-20 rounded-full bg-white flex justify-center items-center ">
+                                        <p class="text-xl">1</p>
+                                    </div>
+                                    <h3 class="text-2xl font-normal" :class="accordion ? 'text-orange' : 'text-black'">What Tools Do I Need to Start Building x a Website?</h3>
+                                </div>
+
+                                <div x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" class="overflow-hidden h-0 duration-500" style="height: auto" >
+                                    <p class="pl-[90px] text-gray mt-3">Yes, creating a website can be straightforward, especially with the help of user-friendly platforms that offer drag-and-drop builders, templates, and step-by-step guides.
+                                        These tools make it possible to design and publish a website without advanced technical skills.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-orange-900 text-orange-50" :class="accordion ? 'bg-orange-900 text-orange-50' : 'bg-orange-50 text-orange-900'">
+                                    <div :class="{ 'hidden': !accordion }" class="">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.0977 0.343734C11.4655 0.0799255 11.9196 0.534045 11.6558 0.901899L8.16718 5.76644C8.06725 5.90579 8.06725 6.09333 8.16718 6.23267L11.6558 11.0972C11.9196 11.4651 11.4655 11.9192 11.0977 11.6554L6.23311 8.16674C6.09377 8.0668 5.90623 8.0668 5.76689 8.16674L0.902341 11.6554C0.534488 11.9192 0.0803687 11.4651 0.344178 11.0972L3.83282 6.23267C3.93275 6.09333 3.93275 5.90579 3.83282 5.76644L0.344177 0.901899C0.0803683 0.534045 0.534488 0.0799259 0.902342 0.343735L5.76689 3.83238C5.90623 3.93231 6.09377 3.93231 6.23311 3.83238L11.0977 0.343734Z" fill="#DA1B12"/>
+                                            </svg>
+                                    </div>
+                                    <div :class="{ 'hidden': accordion }" class="hidden">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.60532 0.39614C7.67889 -0.0505129 8.32111 -0.0505124 8.39468 0.396141L9.36759 6.30274C9.39546 6.47193 9.52807 6.60454 9.69726 6.63241L15.6039 7.60532C16.0505 7.67889 16.0505 8.32111 15.6039 8.39468L9.69726 9.36759C9.52807 9.39546 9.39546 9.52807 9.36759 9.69726L8.39468 15.6039C8.32111 16.0505 7.67889 16.0505 7.60532 15.6039L6.63241 9.69726C6.60454 9.52807 6.47193 9.39546 6.30274 9.36759L0.39614 8.39468C-0.0505129 8.32111 -0.0505124 7.67889 0.396141 7.60532L6.30274 6.63241C6.47193 6.60454 6.60454 6.47193 6.63241 6.30274L7.60532 0.39614Z" fill="#DA1B12"/>
+                                            </svg>
+                                    </div>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="px-8 py-10 mb-6 rounded-3xl shadow-lg">
+                        <div class="flex cursor-pointer group w-full items-start justify-between text-left" x-data="{ accordion: false }" x-on:click="accordion = !accordion">
+                            <div class=" pr-5">
+                                <div class="flex justify-between gap-2.5 items-center">
+                                    <div class="min-w-20 h-20 rounded-full bg-gray flex justify-center items-center ">
+                                        <p class="text-xl text-white">2</p>
+                                    </div>
+                                    <h3 class="text-2xl font-normal" :class="accordion ? 'text-orange' : 'text-black'">Can I Build a Website Without Coding Knowledge?</h3>
+                                </div>
+
+                                <div x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" class="overflow-hidden h-0 duration-500" style="">
+                                    <p class="pl-[90px] text-gray mt-3">Pretium ac auctor quis urna orci feugiat. Vulputate tellus velit tellus orci auctor vel nulla facilisi ut. Ante nunc risus viverra vivamus.</p>
+                                </div>
+                            </div>
+
+                            <div>
+
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-orange-50 text-orange-900" :class="accordion ? 'bg-orange-900 text-orange-50' : 'bg-orange-50 text-orange-900'">
+                                <div :class="{ 'hidden': !accordion }" class="hidden">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0977 0.343734C11.4655 0.0799255 11.9196 0.534045 11.6558 0.901899L8.16718 5.76644C8.06725 5.90579 8.06725 6.09333 8.16718 6.23267L11.6558 11.0972C11.9196 11.4651 11.4655 11.9192 11.0977 11.6554L6.23311 8.16674C6.09377 8.0668 5.90623 8.0668 5.76689 8.16674L0.902341 11.6554C0.534488 11.9192 0.0803687 11.4651 0.344178 11.0972L3.83282 6.23267C3.93275 6.09333 3.93275 5.90579 3.83282 5.76644L0.344177 0.901899C0.0803683 0.534045 0.534488 0.0799259 0.902342 0.343735L5.76689 3.83238C5.90623 3.93231 6.09377 3.93231 6.23311 3.83238L11.0977 0.343734Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                                <div :class="{ 'hidden': accordion }">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60532 0.39614C7.67889 -0.0505129 8.32111 -0.0505124 8.39468 0.396141L9.36759 6.30274C9.39546 6.47193 9.52807 6.60454 9.69726 6.63241L15.6039 7.60532C16.0505 7.67889 16.0505 8.32111 15.6039 8.39468L9.69726 9.36759C9.52807 9.39546 9.39546 9.52807 9.36759 9.69726L8.39468 15.6039C8.32111 16.0505 7.67889 16.0505 7.60532 15.6039L6.63241 9.69726C6.60454 9.52807 6.47193 9.39546 6.30274 9.36759L0.39614 8.39468C-0.0505129 8.32111 -0.0505124 7.67889 0.396141 7.60532L6.30274 6.63241C6.47193 6.60454 6.60454 6.47193 6.63241 6.30274L7.60532 0.39614Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="px-8 py-10 mb-6 rounded-3xl shadow-lg">
+                    <div class="flex cursor-pointer group w-full items-start justify-between text-left" x-data="{ accordion: false }" x-on:click="accordion = !accordion">
+                        <div class=" pr-5">
+
+                            <div class="flex justify-between gap-2.5 items-center">
+                                <div class="min-w-20 h-20 rounded-full bg-gray flex justify-center items-center ">
+                                    <p class="text-xl text-white">3</p>
+                                </div>
+                                <h3 class="text-2xl font-normal" :class="accordion ? 'text-orange' : 'text-black'">How Can I Create a Website Without Coding Skills?</h3>
+                            </div>
+
+                            <div x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" class="overflow-hidden h-0 duration-500" style="">
+                                <p class="pl-[90px] text-gray mt-3">Pretium ac auctor quis urna orci feugiat. Vulputate tellus velit tellus orci auctor vel nulla facilisi ut. Ante nunc risus viverra vivamus.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-orange-50 text-orange-900" :class="accordion ? 'bg-orange-900 text-orange-50' : 'bg-orange-50 text-orange-900'">
+                                <div :class="{ 'hidden': !accordion }" class="hidden">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0977 0.343734C11.4655 0.0799255 11.9196 0.534045 11.6558 0.901899L8.16718 5.76644C8.06725 5.90579 8.06725 6.09333 8.16718 6.23267L11.6558 11.0972C11.9196 11.4651 11.4655 11.9192 11.0977 11.6554L6.23311 8.16674C6.09377 8.0668 5.90623 8.0668 5.76689 8.16674L0.902341 11.6554C0.534488 11.9192 0.0803687 11.4651 0.344178 11.0972L3.83282 6.23267C3.93275 6.09333 3.93275 5.90579 3.83282 5.76644L0.344177 0.901899C0.0803683 0.534045 0.534488 0.0799259 0.902342 0.343735L5.76689 3.83238C5.90623 3.93231 6.09377 3.93231 6.23311 3.83238L11.0977 0.343734Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                                <div :class="{ 'hidden': accordion }">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60532 0.39614C7.67889 -0.0505129 8.32111 -0.0505124 8.39468 0.396141L9.36759 6.30274C9.39546 6.47193 9.52807 6.60454 9.69726 6.63241L15.6039 7.60532C16.0505 7.67889 16.0505 8.32111 15.6039 8.39468L9.69726 9.36759C9.52807 9.39546 9.39546 9.52807 9.36759 9.69726L8.39468 15.6039C8.32111 16.0505 7.67889 16.0505 7.60532 15.6039L6.63241 9.69726C6.60454 9.52807 6.47193 9.39546 6.30274 9.36759L0.39614 8.39468C-0.0505129 8.32111 -0.0505124 7.67889 0.396141 7.60532L6.30274 6.63241C6.47193 6.60454 6.60454 6.47193 6.63241 6.30274L7.60532 0.39614Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="px-8 py-10 mb-6 rounded-3xl shadow-lg">
+                    <div class="flex cursor-pointer group w-full items-start justify-between text-left" x-data="{ accordion: false }" x-on:click="accordion = !accordion">
+                        <div class=" pr-5">
+
+                            <div class="flex justify-between gap-2.5 items-center">
+                                <div class="min-w-20 h-20 rounded-full bg-gray flex justify-center items-center ">
+                                    <p class="text-xl text-white">4</p>
+                                </div>
+                                <h3 class="text-2xl font-normal" :class="accordion ? 'text-orange' : 'text-black'">Is Coding Knowledge Necessary for Building a Website?</h3>
+                            </div>
+
+                            <div x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" class="overflow-hidden h-0 duration-500" style="">
+                                <p class="pl-[90px] text-gray mt-3">Pretium ac auctor quis urna orci feugiat. Vulputate tellus velit tellus orci auctor vel nulla facilisi ut. Ante nunc risus viverra vivamus.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-orange-50 text-orange-900" :class="accordion ? 'bg-orange-900 text-orange-50' : 'bg-orange-50 text-orange-900'">
+                                <div :class="{ 'hidden': !accordion }" class="hidden">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0977 0.343734C11.4655 0.0799255 11.9196 0.534045 11.6558 0.901899L8.16718 5.76644C8.06725 5.90579 8.06725 6.09333 8.16718 6.23267L11.6558 11.0972C11.9196 11.4651 11.4655 11.9192 11.0977 11.6554L6.23311 8.16674C6.09377 8.0668 5.90623 8.0668 5.76689 8.16674L0.902341 11.6554C0.534488 11.9192 0.0803687 11.4651 0.344178 11.0972L3.83282 6.23267C3.93275 6.09333 3.93275 5.90579 3.83282 5.76644L0.344177 0.901899C0.0803683 0.534045 0.534488 0.0799259 0.902342 0.343735L5.76689 3.83238C5.90623 3.93231 6.09377 3.93231 6.23311 3.83238L11.0977 0.343734Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                                <div :class="{ 'hidden': accordion }">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60532 0.39614C7.67889 -0.0505129 8.32111 -0.0505124 8.39468 0.396141L9.36759 6.30274C9.39546 6.47193 9.52807 6.60454 9.69726 6.63241L15.6039 7.60532C16.0505 7.67889 16.0505 8.32111 15.6039 8.39468L9.69726 9.36759C9.52807 9.39546 9.39546 9.52807 9.36759 9.69726L8.39468 15.6039C8.32111 16.0505 7.67889 16.0505 7.60532 15.6039L6.63241 9.69726C6.60454 9.52807 6.47193 9.39546 6.30274 9.36759L0.39614 8.39468C-0.0505129 8.32111 -0.0505124 7.67889 0.396141 7.60532L6.30274 6.63241C6.47193 6.60454 6.60454 6.47193 6.63241 6.30274L7.60532 0.39614Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="px-8 py-10 rounded-3xl shadow-lg">
+                    <div class="flex cursor-pointer group w-full items-start justify-between text-left" x-data="{ accordion: false }" x-on:click="accordion = !accordion">
+                        <div class=" pr-5">
+
+                            <div class="flex justify-between gap-2.5 items-center">
+                                <div class="min-w-20 h-20 rounded-full bg-gray flex justify-center items-center ">
+                                    <p class="text-xl text-white">5</p>
+                                </div>
+                                <h3 class="text-2xl font-normal" :class="accordion ? 'text-orange' : 'text-black'">What Tools Do I Need to Start Building a Website?</h3>
+                            </div>
+
+                            <div x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" class="overflow-hidden h-0 duration-500" style="">
+                                <p class="pl-[90px] text-gray mt-3">Pretium ac auctor quis urna orci feugiat. Vulputate tellus velit tellus orci auctor vel nulla facilisi ut. Ante nunc risus viverra vivamus.</p>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-orange-50 text-orange-900" :class="accordion ? 'bg-orange-900 text-orange-50' : 'bg-orange-50 text-orange-900'">
+                                <div :class="{ 'hidden': !accordion }" class="hidden">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0977 0.343734C11.4655 0.0799255 11.9196 0.534045 11.6558 0.901899L8.16718 5.76644C8.06725 5.90579 8.06725 6.09333 8.16718 6.23267L11.6558 11.0972C11.9196 11.4651 11.4655 11.9192 11.0977 11.6554L6.23311 8.16674C6.09377 8.0668 5.90623 8.0668 5.76689 8.16674L0.902341 11.6554C0.534488 11.9192 0.0803687 11.4651 0.344178 11.0972L3.83282 6.23267C3.93275 6.09333 3.93275 5.90579 3.83282 5.76644L0.344177 0.901899C0.0803683 0.534045 0.534488 0.0799259 0.902342 0.343735L5.76689 3.83238C5.90623 3.93231 6.09377 3.93231 6.23311 3.83238L11.0977 0.343734Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                                <div :class="{ 'hidden': accordion }">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60532 0.39614C7.67889 -0.0505129 8.32111 -0.0505124 8.39468 0.396141L9.36759 6.30274C9.39546 6.47193 9.52807 6.60454 9.69726 6.63241L15.6039 7.60532C16.0505 7.67889 16.0505 8.32111 15.6039 8.39468L9.69726 9.36759C9.52807 9.39546 9.39546 9.52807 9.36759 9.69726L8.39468 15.6039C8.32111 16.0505 7.67889 16.0505 7.60532 15.6039L6.63241 9.69726C6.60454 9.52807 6.47193 9.39546 6.30274 9.36759L0.39614 8.39468C-0.0505129 8.32111 -0.0505124 7.67889 0.396141 7.60532L6.30274 6.63241C6.47193 6.60454 6.60454 6.47193 6.63241 6.30274L7.60532 0.39614Z" fill="#DA1B12"/>
+                                        </svg>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Newslatter AREA -->
+
+    <section>
+    <div class="container py-12 space-y-12 ">
+        <div class="bg-card-color-alt rounded-3xl shadow-2xl py-12 px-6 space-y-[300px] md:space-y-[50px] bg-no-repeat bg-contain max-w-[1320px] m-auto overflow-hidden">
+
+            <div class="space-y-3 w-fit">
+                    <div class="news-box relative inline-block">
+                        <div class="subtitle-box w-fit ">
+                            <p class="subtitle-text leading-none inline-block">24/7 Here To Help You</p>
+                        </div>
+                    </div>
+                    <img class="lg:hidden" src="Assets/images/sm-newsletter.png" alt="">
+                    <h2 class="section-title text-left lg:w-fit text-10">Face Any <br class="lg:hidden">Problem? <br><span class="color-text">Get Instant<br class="lg:hidden"> Support From Us</span></h2>
+                    <p class="text-gray w-1/2 lg:w-fit">Complete tools to attract customers and grow your business online effortlessly.</p>
+            </div>
+
+            <div>
+                <div class=" flex flex-row gap-2">
+                    <input class="lg:w-1/3 py-3 px-4 text-sm text-gray placeholder-gray border border-subtitle-color focus:border-red focus:outline-red rounded-lg" type="email" placeholder="Your Email Address">
+                    <button type="submit" class="btn btn-gradient text-white sm:min-w-32  "> Get Support</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- Footer Area -->
+
+    <footer class="bg-white" aria-labelledby="footer-heading">
+        <div class="container">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="mx-auto px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32 space-y-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="space-y-8">
+                        <div class="border-b border-card-color-sky pb-3 space-y-4">
+                            <img class="h-9" src="Assets/images/Logo Black.png" alt="Onnomatra">
+                            <p class="text-xs text-gray">Empowers businesses with easy-to-use, code-free website solutions designed to attract and engage customers. From hosting to seamless management tools, we provide everything you need to succeed.</p>
+                        </div>
+                                <!-- SocialIcon -->
+                        <div class="space-y-3">
+                                <h3 class="text-sm font-semibold leading-6 ">Follow Us:</h3>
+                                <div class="flex space-x-6">
+                                    <a href="#" class="text-gray-400 hover:text-gray-500 text-2xl">
+                                        <span class="sr-only">Facebook</span>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4_650)">
+                                            <path d="M10 0.0800781C4.4772 0.0800781 0 4.55728 0 10.0801C0 14.7697 3.2288 18.7049 7.5844 19.7857V13.1361H5.5224V10.0801H7.5844V8.76328C7.5844 5.35968 9.1248 3.78208 12.4664 3.78208C13.1 3.78208 14.1932 3.90648 14.6404 4.03048V6.80048C14.4044 6.77568 13.9944 6.76328 13.4852 6.76328C11.8456 6.76328 11.212 7.38448 11.212 8.99928V10.0801H14.4784L13.9172 13.1361H11.212V20.0069C16.1636 19.4089 20.0004 15.1929 20.0004 10.0801C20 4.55728 15.5228 0.0800781 10 0.0800781Z" fill="#546881"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_4_650">
+                                            <rect width="20" height="20" fill="white" transform="translate(0 0.0800781)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a>
+
+                                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                                            <span class="sr-only">Twiter</span>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.2718 1.6665H18.0831L11.9413 8.68608L19.1666 18.2381H13.5093L9.07828 12.4449L4.00821 18.2381H1.19528L7.76445 10.7299L0.833252 1.6665H6.63418L10.6394 6.96178L15.2718 1.6665ZM14.2852 16.5555H15.8429L5.78775 3.26078H4.11614L14.2852 16.5555Z" fill="#546881"/>
+                                                </svg>
+
+                                        </a>
+
+                                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                                            <span class="sr-only">Youtube</span>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.8008 6.08008C19.8008 6.08008 19.6055 4.70117 19.0039 4.0957C18.2422 3.29883 17.3906 3.29492 17 3.24805C14.2031 3.04492 10.0039 3.04492 10.0039 3.04492H9.99609C9.99609 3.04492 5.79688 3.04492 3 3.24805C2.60938 3.29492 1.75781 3.29883 0.996094 4.0957C0.394531 4.70117 0.203125 6.08008 0.203125 6.08008C0.203125 6.08008 0 7.70117 0 9.31836V10.834C0 12.4512 0.199219 14.0723 0.199219 14.0723C0.199219 14.0723 0.394531 15.4512 0.992187 16.0566C1.75391 16.8535 2.75391 16.8262 3.19922 16.9121C4.80078 17.0645 10 17.1113 10 17.1113C10 17.1113 14.2031 17.1035 17 16.9043C17.3906 16.8574 18.2422 16.8535 19.0039 16.0566C19.6055 15.4512 19.8008 14.0723 19.8008 14.0723C19.8008 14.0723 20 12.4551 20 10.834V9.31836C20 7.70117 19.8008 6.08008 19.8008 6.08008ZM7.93359 12.6738V7.05273L13.3359 9.87305L7.93359 12.6738Z" fill="#546881"/>
+                                            </svg>
+                                        </a>
+
+                                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                                            <span class="sr-only">Telegram</span>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_653)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 10.0801C20 15.6029 15.5228 20.0801 10 20.0801C4.47715 20.0801 0 15.6029 0 10.0801C0 4.55723 4.47715 0.0800781 10 0.0800781C15.5228 0.0800781 20 4.55723 20 10.0801ZM10.3584 7.46252C9.38571 7.86708 7.44178 8.70441 4.52658 9.97451C4.05319 10.1628 3.80521 10.3469 3.78264 10.527C3.74449 10.8313 4.12559 10.9512 4.64456 11.1143C4.71515 11.1365 4.78829 11.1595 4.86328 11.1839C5.37386 11.3499 6.06069 11.5441 6.41774 11.5518C6.74162 11.5588 7.10311 11.4252 7.5022 11.1512C10.226 9.31258 11.632 8.38325 11.7203 8.36322C11.7825 8.34908 11.8688 8.33131 11.9273 8.38328C11.9858 8.43525 11.98 8.53368 11.9738 8.56008C11.9361 8.72103 10.4401 10.1118 9.66593 10.8316C9.42459 11.0559 9.25339 11.2151 9.2184 11.2514C9.14 11.3329 9.06011 11.4099 8.98332 11.4839C8.50897 11.9412 8.15326 12.2841 9.00301 12.8441C9.41137 13.1132 9.73814 13.3357 10.0641 13.5577C10.4201 13.8001 10.7752 14.042 11.2347 14.3431C11.3517 14.4199 11.4635 14.4996 11.5724 14.5772C11.9867 14.8726 12.359 15.1379 12.8188 15.0956C13.086 15.071 13.3621 14.8198 13.5022 14.0704C13.8335 12.2994 14.4847 8.46212 14.6352 6.88089C14.6484 6.74235 14.6318 6.56505 14.6185 6.48722C14.6051 6.40939 14.5773 6.2985 14.4761 6.21641C14.3563 6.11919 14.1714 6.09869 14.0886 6.10015C13.7125 6.10677 13.1355 6.30743 10.3584 7.46252Z" fill="#546881"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_653">
+                                                <rect width="20" height="20" fill="white" transform="translate(0 0.0800781)"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+
+                                        </a>
+                                </div>
+                        </div>
+                    </div>
+                                <!-- Footer Nav -->
+                    <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                        <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 class="text-sm font-semibold leading-6 ">Company</h3>
+                                <ul role="list" class="mt-6 space-y-3 text-gray">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Leadership</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-10 md:mt-0">
+                                <h3 class="text-sm font-semibold leading-6 ">Products</h3>
+                                <ul role="list" class="mt-6 space-y-3 text-gray">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">E-commerce</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">Clothing Brand</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">Jewelry Brand</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">All Products</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 class="text-sm font-semibold leading-6 ">Supports</h3>
+                                <ul role="list" class="mt-6 space-y-3 text-gray">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">Product Guides</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">Troubleshooting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">Feedback</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 hover:text-black">Contact Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-10 md:mt-0">
+                                <h3 class="text-sm font-semibold leading-6 ">Resources</h3>
+                                <ul role="list" class="mt-6 space-y-3 text-gray">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Case Studies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Developers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-black">Partners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 border-t border-card-color-sky pt-8 space-y-7 md:space-y-0 md:flex md:flex-row md:justify-between">
+                    <p class=" text-gray leading-5 text-center">&copy;onnomatra.com</p>
+                    <div class="space-x-5 flex justify-between ">
+                        <a href="#" class="leading-6 hover:text-gray">Term of Conditions</a>
+                        <a href="#" class="leading-6 hover:text-gray">Privacy Policy</a>
+                        <a href="#" class="leading-6 hover:text-gray">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
